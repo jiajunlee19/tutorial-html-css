@@ -1,0 +1,39 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#p-blue-1 {
+    color: blue;
+    font-size: medium;
+    text-align: center;
+}
+
+.p-red {
+    color: red;
+}
+
+#b-1 {
+    display: block;
+    padding: 30px; /*padding is the space between content to border*/
+    margin: auto; /*margin is the space outside of border*/
+    border: 10px solid black; /*margin-border-padding-content*/
+    transform: scale(1);
+    transform: rotate(360);
+    transform: translate(0px, 0px); /*Offset by (x,y) coordinates*/
+    transition: 0.4s; /*smoothen transition*/
+    animation: fade-in 1s; /*animation with keyframes*/
+}
+
+#b-1:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+img {
+    display: block; /*Make it a block which brings it over to next line*/
+}
