@@ -37,3 +37,58 @@
 img {
     display: block; /*Make it a block which brings it over to next line*/
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* opacity: 0;
+    z-index: -50; */
+}
+
+
+/* Intermediate CSS */
+
+.intermediate-css {
+    margin-top: 20px;
+}
+
+.flexbox {
+    height: 300px;
+    width: 600px;
+    background-color: grey;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    position: relative; /*relative set it as a reference point*/
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    text-align: center;
+}
+
+.box:nth-child(1) {
+    background-color: var(--accent);
+
+    position: absolute; /*absolute set an exact position independent of layout*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /*Offset it to center*/
+}
+
+:root {
+    --accent: #0fddad; /*Creating global variables to be used by var(--name)*/
+}
+
+.flexbox-title::after {
+    content: '';
+    height: 5px;
+    width: 75px;
+    background-color: darkgoldenrod;
+    display: block;
+}
