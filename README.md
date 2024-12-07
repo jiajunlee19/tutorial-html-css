@@ -107,3 +107,68 @@ img {
 ```
 
 <br>
+
+# Intermediate CSS
+```html
+<section class="intermediate-css">
+    <h4 class="flexbox-title">Flex Box</h4>
+    <div class="flexbox">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</section>
+```
+
+```css
+.intermediate-css {
+    margin-top: 20px;
+}
+
+.flexbox {
+    height: 300px;
+    width: 600px;
+    background-color: grey;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    position: relative; /*relative set it as a reference point*/
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    text-align: center;
+}
+
+.box:nth-child(1) {
+    background-color: var(--accent);
+
+    position: absolute; /*absolute set an exact position independent of layout*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /*Offset it to center*/
+}
+
+:root {
+    --accent: #0fddad; /*Creating global variables to be used by var(--name)*/
+}
+
+.flexbox-title::after {
+    content: '';
+    height: 5px;
+    width: 75px;
+    background-color: darkgoldenrod;
+    display: block;
+}
+```
+
+# Advanced Flex Box
+Once we learnt thru all the basics, lets dive into an advanced layout, `Flex Box` !
+
+Navigate to [flexbox/index.html](/flexbox/index.html)
+
+<br>

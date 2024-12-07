@@ -1,0 +1,29 @@
+body {
+    overflow-y: hidden;
+}
+
+.boxes {
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /*wrap and push additional items into next row*/
+    align-content: center; /*align content as close as possible to the mentioned*/
+    gap: 20px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 2px solid orange;
+    background-color: purple;
+}
+
+.box:nth-child(1) {
+    flex: 3 /*size ratio of the child*/
+}
